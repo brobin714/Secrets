@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Login</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /login route -->
+          <form action="/login" method="POST">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingEmail" name="username" placeholder="Email">
+              <label for="floatingEmail">Email</label>
+            </div>
+            <div class="form-floating mb-3"">
+              <input type="floatingPassword" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button type="submit" class="btn btn-dark">Login</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <a class="btn btn-block" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Sign In with Google
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>
